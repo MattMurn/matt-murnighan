@@ -1,0 +1,50 @@
+[
+    {
+        "id": "plus",
+        "title": "Plus: One Time Renewal",
+        "company": "M1 Finance",
+        "dateRange": "May 2021 - September 2021"
+    },
+    {
+        "id": "research",
+        "title": "Security Research",
+        "company": "M1 Finance",
+        "dateRange": "September 2021 - December 2021"
+    },
+    {
+        "id": "home",
+        "title": "Home",
+        "company": "M1 Finance",
+        "dateRange": "January 2022 - March 2022"
+    },
+    {
+        "id": "angular2",
+        "title": "Angular2 refactor",
+        "company": "Topstep",
+        "dateRange": "April 2019 - February 2021"
+    },
+    {
+        "id": "insights",
+        "title": "Trader Insights",
+        "company": "Topstep",
+        "dateRange": "September 2020 - February 2021"
+    },
+    {
+        "id": "checkout",
+        "title": "Checkout & Onboarding",
+        "company": "Topstep",
+        "dateRange": "September 20219 - March 2020"
+    },
+    {
+        "id": "cms",
+        "title": "CMS Migration",
+        "company": "Topstep",
+        "dateRange": "April 2019 - September 2019"
+    },
+    {
+        "id": "bates",
+        "title": "Bates Search",
+        "company": "Topstep",
+        "dateRange": "December 2018 - May 2019"
+    }
+]

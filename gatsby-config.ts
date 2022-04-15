@@ -10,7 +10,14 @@ const config: GatsbyConfig = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }]
+  },
+    "gatsby-transformer-json", {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: './src/data/'
+      }
+    }
+  ]
 };
 
 export default config;
