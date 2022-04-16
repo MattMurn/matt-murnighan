@@ -1,0 +1,99 @@
+@import './globals.scss';
+
+.name_wrapper {
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+}
+
+.first_name,
+.last_name {
+    position: relative;
+    line-height: 1;
+    margin: 5px 0;
+    font-size: 150px;
+    color: $accent-color;
+
+    @media only screen and (max-width: 700px) {
+        font-size: 65px;
+    }
+}
+
+.first_name {
+    animation: first_name 1s;
+}
+
+.last_name {
+    animation: last_name 2s;
+}
+
+.initials_container {
+    position: fixed;
+    display: block;
+    top: 185px;
+    z-index: 30;
+    animation: initials 2s;
+}
+
+.name_duplicate {
+    position: relative;
+    font-size: 110px;
+    display: block;
+    height: 130px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .name_wrapper,
+    .name_duplicate {
+        font-size: 65px
+    }
+
+    /* .name_duplicate { font-size: 90px } */
+}
+
+@keyframes first_name {
+    0% {
+        right: -1500px;
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+@keyframes last_name {
+    0% {
+        right: 1500px;
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    75% {
+        opacity: .75;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+@keyframes initials {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

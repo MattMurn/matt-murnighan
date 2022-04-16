@@ -5,18 +5,22 @@ const config: GatsbyConfig = {
     title: `matt-murnighan`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-react-helmet", {
+  plugins: [{
+    resolve: "gatsby-plugin-sass", options: {
+      implementation: require('node-sass')
+    }
+  }, "gatsby-plugin-react-helmet", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
     }
   },
     "gatsby-transformer-json", {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: './src/data/'
-      }
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: './src/data/'
     }
+  }
   ]
 };
 

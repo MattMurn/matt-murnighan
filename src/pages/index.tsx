@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Name } from "../components/Name"
+import { Projects } from "../components/Projects"
 
 // styles
 const pageStyles = {
@@ -16,10 +18,8 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>Matt Murnighan</title>
-      <h1>Matt Murnighan</h1>
-      <h2 style={headingStyles}>
-        New Site coming...
-      </h2>
+      <Name />
+      <Projects />
     </main>
   )
 }
