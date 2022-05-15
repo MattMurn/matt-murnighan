@@ -1,11 +1,5 @@
 @import './globals.scss';
 
-.name_wrapper {
-    position: absolute;
-    bottom: 50%;
-    top: 50%;
-}
-
 .first_name,
 .last_name {
     position: relative;
@@ -25,14 +19,6 @@
 
 .last_name {
     animation: last_name 2s;
-}
-
-.initials_container {
-    position: fixed;
-    display: block;
-    top: 185px;
-    z-index: 30;
-    animation: initials 2s;
 }
 
 .name_duplicate {
@@ -88,12 +74,4 @@
     }
 }
 
-@keyframes initials {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
+;

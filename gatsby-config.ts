@@ -6,6 +6,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [{
+
     resolve: "gatsby-plugin-sass", options: {
       implementation: require('node-sass')
     }
@@ -20,6 +21,11 @@ const config: GatsbyConfig = {
     options: {
       path: './src/data/'
     }
+  }, {
+    resolve: `gatsby-plugin-s3`,
+    options: {
+      bucketName: "matt-murnighan",
+    },
   }
   ]
 };

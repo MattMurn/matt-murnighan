@@ -1,50 +1,315 @@
 [
     {
-        "id": "plus",
-        "title": "Plus: One Time Renewal",
+        "pid": "spend",
+        "title": "Spend Direct Onboarding",
         "company": "M1 Finance",
-        "dateRange": "May 2021 - September 2021"
+        "dateRange": "April 2022 - Present",
+        "description": "Enabled users to open a checking account without first onboarding to an investment account",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 60
+            },
+            {
+                "skill": "graphql",
+                "value": 50
+            },
+            {
+                "skill": "playwright",
+                "value": 20
+            },
+            {
+                "skill": "jest",
+                "value": 10
+            },
+            {
+                "skill": "redux",
+                "value": 20
+            },
+            {
+                "skill": "redux saga",
+                "value": 60
+            },
+            {
+                "skill": "relay",
+                "value": 20
+            },
+            {
+                "skill": "flow",
+                "value": 30
+            }
+        ]
     },
     {
-        "id": "research",
-        "title": "Security Research",
-        "company": "M1 Finance",
-        "dateRange": "September 2021 - December 2021"
-    },
-    {
-        "id": "home",
+        "pid": "home",
         "title": "Home",
         "company": "M1 Finance",
-        "dateRange": "January 2022 - March 2022"
+        "dateRange": "January 2022 - March 2022",
+        "description": "Provided users with a landing page with aggregation of all product accounts and recent account transfers",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 80
+            },
+            {
+                "skill": "graphql",
+                "value": 60
+            },
+            {
+                "skill": "playwright",
+                "value": 30
+            },
+            {
+                "skill": "jest",
+                "value": 20
+            },
+            {
+                "skill": "typescript",
+                "value": 20
+            },
+            {
+                "skill": "redux",
+                "value": 30
+            },
+            {
+                "skill": "redux saga",
+                "value": 30
+            },
+            {
+                "skill": "relay",
+                "value": 70
+            },
+            {
+                "skill": "flow",
+                "value": 30
+            }
+        ]
     },
     {
-        "id": "angular2",
-        "title": "Angular2 refactor",
+        "pid": "research",
+        "title": "Security Research",
+        "company": "M1 Finance",
+        "dateRange": "September 2022 - December 2021",
+        "description": "Refactored Security research with fundamental data points, new visualizations and charting",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 80
+            },
+            {
+                "skill": "graphql",
+                "value": 60
+            },
+            {
+                "skill": "playwright",
+                "value": 30
+            },
+            {
+                "skill": "jest",
+                "value": 20
+            },
+            {
+                "skill": "typescript",
+                "value": 30
+            },
+            {
+                "skill": "redux",
+                "value": 30
+            },
+            {
+                "skill": "redux saga",
+                "value": 30
+            },
+            {
+                "skill": "d3",
+                "value": 60
+            },
+            {
+                "skill": "relay",
+                "value": 70
+            },
+            {
+                "skill": "flow",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "pid": "plus",
+        "title": "Plus: One Time Renewal",
+        "company": "M1 Finance",
+        "dateRange": "May 2021 - September 2021",
+        "description": "Enabled users to go through one-time payment flow for premium service.",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 60
+            },
+            {
+                "skill": "graphql",
+                "value": 70
+            },
+            {
+                "skill": "jest",
+                "value": 20
+            },
+            {
+                "skill": "redux",
+                "value": 20
+            },
+            {
+                "skill": "redux saga",
+                "value": 30
+            },
+            {
+                "skill": "relay",
+                "value": 70
+            },
+            {
+                "skill": "flow",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "pid": "angular2",
+        "title": "Angular2 Migration",
         "company": "Topstep",
-        "dateRange": "April 2019 - February 2021"
+        "dateRange": "April 2019 - February 2021",
+        "description": "Legacy migration from Angular 2 app to modern React app.",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 80
+            },
+            {
+                "skill": "angular",
+                "value": 30
+            },
+            {
+                "skill": "storybook",
+                "value": 42
+            }
+        ]
     },
     {
-        "id": "insights",
+        "pid": "insights",
         "title": "Trader Insights",
         "company": "Topstep",
-        "dateRange": "September 2020 - February 2021"
+        "dateRange": "September 2020 - February 2021",
+        "description": "Provided Traders with data-driven accountability metrics and visualizations",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 80
+            },
+            {
+                "skill": "angular",
+                "value": 20
+            },
+            {
+                "skill": "materialUI",
+                "value": 70
+            },
+            {
+                "skill": "context",
+                "value": 60
+            },
+            {
+                "skill": "rails",
+                "value": 60
+            },
+            {
+                "skill": "rspec",
+                "value": 20
+            },
+            {
+                "skill": "chartJS",
+                "value": 27
+            }
+        ]
     },
     {
-        "id": "checkout",
+        "pid": "checkout",
         "title": "Checkout & Onboarding",
         "company": "Topstep",
-        "dateRange": "September 20219 - March 2020"
+        "dateRange": "September 20219 - March 2020",
+        "description": "Provided users with an intuitive checkout flow",
+        "skillsUsed": [
+            {
+                "skill": "react",
+                "value": 80
+            },
+            {
+                "skill": "angular",
+                "value": 30
+            },
+            {
+                "skill": "materialUI",
+                "value": 50
+            },
+            {
+                "skill": "context",
+                "value": 60
+            },
+            {
+                "skill": "rails",
+                "value": 40
+            },
+            {
+                "skill": "rspec",
+                "value": 20
+            }
+        ]
     },
     {
-        "id": "cms",
+        "pid": "cms",
         "title": "CMS Migration",
         "company": "Topstep",
-        "dateRange": "April 2019 - September 2019"
+        "dateRange": "April 2019 - September 2019",
+        "description": "Legacy migration from Wordpress to Node, Gulp, and Handlebars template solution",
+        "skillsUsed": [
+            {
+                "skill": "node",
+                "value": 20
+            },
+            {
+                "skill": "gulp",
+                "value": 66
+            },
+            {
+                "skill": "webpack",
+                "value": 37
+            },
+            {
+                "skill": "hanldebars",
+                "value": 67
+            },
+            {
+                "skill": "javascript",
+                "value": 77
+            }
+        ]
     },
     {
-        "id": "bates",
+        "pid": "bates",
         "title": "Bates Search",
-        "company": "Topstep",
-        "dateRange": "December 2018 - May 2019"
+        "company": "Law Offices of Susan Bogart",
+        "dateRange": "December 2018 - June 2019",
+        "description": "Automated document search with a Node algorithm solution",
+        "skillsUsed": [
+            {
+                "skill": "node",
+                "value": 80
+            },
+            {
+                "skill": "excel",
+                "value": 66
+            },
+            {
+                "skill": "sheetsJS",
+                "value": 37
+            }
+        ]
     }
 ]
