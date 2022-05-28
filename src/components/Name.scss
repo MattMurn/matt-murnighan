@@ -1,5 +1,10 @@
 @import './globals.scss';
 
+
+.name-wrapper {
+    margin-top: 100px;
+}
+
 .first_name,
 .last_name {
     position: relative;
@@ -30,7 +35,7 @@
 
 @media only screen and (max-width: 700px) {
 
-    .name_wrapper,
+    .name-wrapper,
     .name_duplicate {
         font-size: 65px
     }

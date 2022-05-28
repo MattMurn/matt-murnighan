@@ -3,7 +3,7 @@ import './name.scss';
 import './globals.scss'
 
 export const Name = () => (
-    <section className="wrapper">
+    <section className="wrapper name-wrapper">
         <h1 className="first_name"> Matt </h1>
         <h1 className="last_name"> Murnighan </h1>
     </section>

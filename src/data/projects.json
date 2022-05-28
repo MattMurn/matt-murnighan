@@ -109,10 +109,6 @@
                 "value": 20
             },
             {
-                "skill": "typescript",
-                "value": 30
-            },
-            {
                 "skill": "redux",
                 "value": 30
             },
@@ -172,8 +168,8 @@
         ]
     },
     {
-        "pid": "angular2",
-        "title": "Angular2 Migration",
+        "pid": "angular",
+        "title": "Angular Migration",
         "company": "Topstep",
         "dateRange": "April 2019 - February 2021",
         "description": "Legacy migration from Angular 2 app to modern React app.",

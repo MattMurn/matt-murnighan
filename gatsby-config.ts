@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `matt-murnighan`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.mattmurnighan.com`
   },
   plugins: [{
 
@@ -25,6 +25,7 @@ const config: GatsbyConfig = {
     resolve: `gatsby-plugin-s3`,
     options: {
       bucketName: "matt-murnighan",
+      acl: null
     },
   }
   ]

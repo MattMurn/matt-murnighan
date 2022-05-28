@@ -4,7 +4,7 @@ import './globals.scss'
 
 
 export const About = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query AboutQuery {
         allProjectsJson {
             edges {
@@ -15,10 +15,10 @@ export const About = () => {
           }
     }
 `)
-    return <section className='wrapper'>
-        <h1>About</h1>
-        <div>
+  return <section className='wrapper'>
+    <h1>About</h1>
+    <div>
 
-        </div>
-    </section>
+    </div>
+  </section>
 }

@@ -2,6 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import './globals.scss'
 import './projects.scss'
+import { Treemap } from './Treemap';
+
+type Nullable<T> = T | null;
+export type Skills = {
+  value: number,
+  skill: string
+}
+type StaticData = {
+  node: {
+    title: string,
+    pid: string,
+    company: string,
+    dateRange: string,
+    description: string,
+    skillsUsed: Array<Skills>
+  }
+}
 
 export const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -13,6 +30,7 @@ export const Projects = () => {
                 pid
                 company
                 dateRange
+                description
                 skillsUsed {
                   value
                   skill
@@ -22,22 +40,43 @@ export const Projects = () => {
           }
     }
 `)
-  const [selectedProject, setSelectedProject] = useState('home')
-  const [selectedData, setSelectedData] = useState(null)
-  useEffect(() => {
-    const selected = data.allProjectsJson.edges.filter((data) => data.node.pid === selectedProject)[0].node;
-    setSelectedData(selected)
-  }, [selectedProject])
-  return <section className='wrapper'>
-    <h1 className='project-title'>Project</h1>
-    <ul>
-      {data.allProjectsJson.edges.map((edge: any) => {
-        const { title, pid } = edge.node;
-        return <div>
-          <li key={pid} onClick={() => setSelectedProject(pid)} className={pid === selectedProject ? 'project project-selected' : 'project project-unselected'}> {title}</li>
+
+  const [selectedProject, setSelectedProject] = useState<Nullable<StaticData>>(data.allProjectsJson.edges[0])
+  const [skillsUsed, setSkillsUsed] = useState<Nullable<Skills>>(null)
+
+
+  const handleClick = (pid: string) => {
+    const selected = data.allProjectsJson.edges.filter((data: StaticData) => data.node.pid === pid)[0];
+    setSelectedProject(selected);
+    setSkillsUsed(selected.node.skillsUsed);
+  }
+  console.log(selectedProject);
+  return <section className='wrapper project-wrapper'>
+    <div>
+      <h1 className='project-title'>Project</h1>
+      <ul className="project-list">
+        {data.allProjectsJson.edges.map((edge: any) => {
+          const { title, pid } = edge.node;
+          return <div key={pid}>
+            <li onClick={() => handleClick(pid)} className={pid === selectedProject?.node.pid ? 'project project-selected' : 'project project-unselected'}> {title}</li>
+          </div>
+        })}
+      </ul>
+    </div>
+    {
+      data &&
+      skillsUsed &&
+      <div className="project-skills">
+        <div className='project-review'>
+          <h4>{selectedProject?.node.company} | </h4>
+          &nbsp;
+
+          <h4>{selectedProject?.node.dateRange}</h4>
         </div>
-      })}
-    </ul>
+        <p>{selectedProject?.node.description}</p>
+        <Treemap skillsUsed={skillsUsed} />
+      </div>
+    }
 
   </section>
 }
