@@ -58,7 +58,9 @@ export const Projects = () => {
         {data.allProjectsJson.edges.map((edge: any) => {
           const { title, pid } = edge.node;
           return <div key={pid}>
-            <li onClick={() => handleClick(pid)} className={pid === selectedProject?.node.pid ? 'project project-selected' : 'project project-unselected'}> {title}</li>
+            <li onClick={() => handleClick(pid)} className={pid === selectedProject?.node.pid ? 'project project-selected' : 'project project-unselected'}> {title}
+              <p className={pid === selectedProject?.node.pid ? 'selected-description--show' : 'selected-description--hide'}>{selectedProject?.node.description}</p>
+            </li>
           </div>
         })}
       </ul>
@@ -73,7 +75,6 @@ export const Projects = () => {
 
           <h4>{selectedProject?.node.dateRange}</h4>
         </div>
-        <p>{selectedProject?.node.description}</p>
         <Treemap skillsUsed={skillsUsed} />
       </div>
     }
