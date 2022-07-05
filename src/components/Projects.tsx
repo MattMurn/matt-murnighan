@@ -4,7 +4,7 @@ import './globals.scss'
 import './projects.scss'
 import { Treemap } from './Treemap';
 
-type Nullable<T> = T | null;
+export type Nullable<T> = T | null | undefined;
 export type Skills = {
   value: number,
   skill: string
@@ -41,8 +41,8 @@ export const Projects = () => {
     }
 `)
 
-  const [selectedProject, setSelectedProject] = useState<Nullable<StaticData>>(data.allProjectsJson.edges[0])
-  const [skillsUsed, setSkillsUsed] = useState<Nullable<Skills>>(null)
+  const [selectedProject, setSelectedProject] = useState<StaticData>(data.allProjectsJson.edges[1])
+  const [skillsUsed, setSkillsUsed] = useState<Array<Skills>>(selectedProject.node.skillsUsed)
 
 
   const handleClick = (pid: string) => {
@@ -50,10 +50,10 @@ export const Projects = () => {
     setSelectedProject(selected);
     setSkillsUsed(selected.node.skillsUsed);
   }
-  console.log(selectedProject);
+
   return <section className='wrapper project-wrapper'>
     <div>
-      <h1 className='project-title'>Project</h1>
+      <h1 className='project-title'>Projects</h1>
       <ul className="project-list">
         {data.allProjectsJson.edges.map((edge: any) => {
           const { title, pid } = edge.node;

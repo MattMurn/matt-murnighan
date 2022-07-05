@@ -45,7 +45,7 @@
         "title": "Home",
         "company": "M1 Finance",
         "dateRange": "January 2022 - March 2022",
-        "description": "Provided users with a landing page with aggregation of all product accounts and recent account transfers",
+        "description": "Provided users with aggreated financial information and M1 net worth",
         "skillsUsed": [
             {
                 "skill": "react",
@@ -82,6 +82,14 @@
             {
                 "skill": "flow",
                 "value": 30
+            },
+            {
+                "skill": "node",
+                "value": 40
+            },
+            {
+                "skill": "graphql",
+                "value": 27
             }
         ]
     },
@@ -90,7 +98,7 @@
         "title": "Security Research",
         "company": "M1 Finance",
         "dateRange": "September 2022 - December 2021",
-        "description": "Refactored Security research with fundamental data points, new visualizations and charting",
+        "description": "Built Security research with fundamental data points, new visualizations and charting",
         "skillsUsed": [
             {
                 "skill": "react",
