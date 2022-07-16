@@ -1,6 +1,9 @@
 import * as React from "react"
-import { Name } from "../components/Name"
-import { Projects } from "../components/Projects"
+import { Name } from "../components"
+// @ts-ignore
+import { Projects } from "../components"
+// @ts-ignore
+import { TechnicalSkills } from '../components';
 import './main.scss'
 
 const IndexPage = () => {
@@ -9,6 +12,7 @@ const IndexPage = () => {
       <title>Matt Murnighan</title>
       <Name />
       <Projects />
+      <TechnicalSkills />
     </main>
   )
 }

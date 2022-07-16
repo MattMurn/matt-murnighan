@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import './globals.scss'
+import '../globals.scss'
 
 
 export const About = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './name.scss';
-import './globals.scss'
+import '../globals.scss'
 
 export const Name = () => (
     <section className="wrapper name-wrapper">

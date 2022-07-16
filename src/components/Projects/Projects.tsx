@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import './globals.scss'
+import '../globals.scss'
 import './projects.scss'
 import { Treemap } from './Treemap';
 
