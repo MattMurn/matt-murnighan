@@ -51,7 +51,7 @@ export const Projects = () => {
     setSkillsUsed(selected.node.skillsUsed);
   }
 
-  return <section className='wrapper project-wrapper'>
+  return <section className='wrapper project-wrapper snap-child'>
     <div>
       <h1 className='project-title'>Projects</h1>
       <ul className="project-list">

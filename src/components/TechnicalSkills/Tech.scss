@@ -1,0 +1,83 @@
+@import '../globals.scss';
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        color: inherit;
+        background: inherit;
+        border: none;
+        cursor: pointer;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .title-active {
+        border-bottom: 4px solid $main-bg;
+    }
+}
+
+.skills-svg {
+    height: 600px;
+    width: 1000px;
+}
+
+.skills-g {
+    transform: translate(40, 40);
+}
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    font: 14px sans-serif;
+}
+
+.tech_svg {
+    width: 90vw;
+    height: 100vh;
+}
+
+.tech-title-container {
+    position: absolute;
+    font-size: 42px;
+    top: 10px;
+    left: 100px;
+    color: $accent-color;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end);
+
+    @media screen and (max-width: 489px) {
+        font-size: 20px;
+        left: 10px;
+        top: 100px;
+    }
+}
+
+.tech-circle {
+    fill: $accent-color;
+
+
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}

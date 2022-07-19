@@ -1,6 +1,11 @@
 .main {
+    max-height: 100vh;
+    overflow-y: scroll;
     color: #232129;
-    padding: 96;
     font-family: 'Roboto', sans-serif;
     scroll-snap-type: y mandatory;
+}
+
+.snap-child {
+    scroll-snap-align: start;
 }
